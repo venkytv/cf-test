@@ -16,12 +16,13 @@ erb httpd.conf >./apache/conf/httpd.conf
 
 uname -a
 
-tail -f apache/logs/error_log &
-ls -l apache/logs
+#tail -f apache/logs/error_log &
 
 /app/apache/bin/httpd -k start
 
 sleep 5
+echo "========= logs ==========="
+ls -l apache/logs
 ps -ef | grep httpd
 
 exit 1
