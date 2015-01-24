@@ -17,6 +17,7 @@ tail -f tomcat/logs/catalina.out &
 # Deploy all war files
 WEBAPPDIR=/app/tomcat/webapps
 for WAR in *.war; do
+	[[ -r "$WAR" ]] || continue
 	echo "Deploying $WAR"
 	cp "$WAR" "$WEBAPPDIR"
 done
