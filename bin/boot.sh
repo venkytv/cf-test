@@ -16,9 +16,11 @@ erb httpd.conf >./apache/conf/httpd.conf
 
 uname -a
 
-tail -f apache/logs/error.log &
+tail -f apache/logs/error_log &
 
 /app/apache/bin/httpd -k start
 
-sleep 1
+sleep 5
+ps -ef | grep httpd
+
 exit 1
