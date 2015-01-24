@@ -10,6 +10,7 @@ export CATALINA_HOME=/app/tomcat
 export JRE_HOME=/app/jdk/jre
 ${CATALINA_HOME}/bin/startup.sh &
 
+sleep 2
 tail -f apache/logs/error_log &
 tail -f tomcat/logs/catalina.out &
 
