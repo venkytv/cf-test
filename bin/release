@@ -1,5 +1,5 @@
 #!/bin/bash
 cat <<EOT
 default_process_types:
-  web: /bin/false
+  web: sh boot.sh
 EOT
