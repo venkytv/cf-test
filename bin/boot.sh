@@ -5,13 +5,13 @@ export
 
 erb httpd.conf >./apache/conf/httpd.conf
 
-echo "==== JAVA ===="
-add-apt-repository "deb http://archive.canonical.com/ lucid  partner"
-apt-get update
-apt-get install sun-java6-jre
-type java
-
+echo "=== APACHE ==="
 /app/apache/bin/httpd -k start
+
+echo "=== TOMCAT ==="
+CATALINA_HOME=/app/tomcat JRE_HOME=/app/jdk/jre \
+	${CATALINA_HOME}/bin/startup.sh &
+
 sleep 5
 
 tail -f apache/logs/error_log &

@@ -5,6 +5,8 @@ CACHEDIR="$2"
 
 cd "$BUILDDIR"
 
-tar xvf apache.tar.bz2
+tar xf apache.tar.bz2
+tar xf jdk.tar.bz2
+tar xf tomcat.tar.bz2
 
 cp "$( dirname $0 )/boot.sh" .
