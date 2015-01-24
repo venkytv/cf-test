@@ -6,9 +6,9 @@ export
 erb httpd.conf >./apache/conf/httpd.conf
 
 echo "==== JAVA ===="
-sudo add-apt-repository "deb http://archive.canonical.com/ lucid  partner"
-sudo apt-get update
-sudo apt-get install sun-java6-jre
+add-apt-repository "deb http://archive.canonical.com/ lucid  partner"
+apt-get update
+apt-get install sun-java6-jre
 type java
 
 /app/apache/bin/httpd -k start
