@@ -17,6 +17,7 @@ erb httpd.conf >./apache/conf/httpd.conf
 uname -a
 
 tail -f apache/logs/error_log &
+ls -l apache/logs
 
 /app/apache/bin/httpd -k start
 
