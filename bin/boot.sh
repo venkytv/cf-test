@@ -2,5 +2,5 @@
 
 echo "Release script"
 export
-sleep 1
+sleep 10
 exit 1
