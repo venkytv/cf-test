@@ -23,6 +23,7 @@ uname -a
 sleep 5
 echo "========= logs ==========="
 ls -l apache/logs
+tail -f apache/logs/error_log &
 ps -ef | grep httpd
 
 exit 1
