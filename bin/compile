@@ -5,8 +5,12 @@ CACHEDIR="$2"
 
 cd "$BUILDDIR"
 
-tar xf apache.tar.bz2
-tar xf jdk.tar.bz2
-tar xf tomcat.tar.bz2
+#
+# We would ideally want to download these from a 
+# webserver somewhere.
+#
+tar xf bundles/apache.tar.bz2
+tar xf bundles/jdk.tar.bz2
+tar xf bundles/tomcat.tar.bz2
 
 cp "$( dirname $0 )/boot.sh" .
