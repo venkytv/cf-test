@@ -1,6 +1,6 @@
 #!/bin/bash
 
-if [[ -f "$1/httpd.conf.tmpl" ]]; then
+if [[ -f "$1/templates/httpd.conf.tmpl" ]]; then
 	echo "Apache Tomcat Prototype" && exit 0
 else
 	echo "no" && exit 1
