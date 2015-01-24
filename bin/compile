@@ -5,6 +5,6 @@ CACHEDIR="$2"
 
 cd "$BUILDDIR"
 
-#tar xf apache.tar.bz2
+tar xvf apache.tar.bz2
 
 cp "$( dirname $0 )/boot.sh" .

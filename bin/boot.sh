@@ -2,5 +2,10 @@
 
 echo "Release script"
 export
-sleep 10
+
+echo "====================="
+pwd
+find .
+
+sleep 1
 exit 1
