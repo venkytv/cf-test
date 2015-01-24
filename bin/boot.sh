@@ -18,7 +18,7 @@ uname -a
 
 tail -f apache/logs/error.log &
 
-/app/apache/bin/httpd -k
+/app/apache/bin/httpd -k start
 
 sleep 1
 exit 1
