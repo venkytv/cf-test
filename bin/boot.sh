@@ -9,8 +9,9 @@ echo "=== APACHE ==="
 /app/apache/bin/httpd -k start
 
 echo "=== TOMCAT ==="
-CATALINA_HOME=/app/tomcat JRE_HOME=/app/jdk/jre \
-	${CATALINA_HOME}/bin/startup.sh &
+export CATALINA_HOME=/app/tomcat
+export JRE_HOME=/app/jdk/jre
+${CATALINA_HOME}/bin/startup.sh &
 
 sleep 5
 
