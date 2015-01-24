@@ -1,5 +1,6 @@
 #!/bin/bash
 
-echo "$*"
-pwd
-ls -l
+BUILDDIR="$1"
+CACHEDIR="$2"
+
+find "$BUILDDIR"
