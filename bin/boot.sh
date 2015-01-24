@@ -13,6 +13,13 @@ ${CATALINA_HOME}/bin/startup.sh &
 sleep 5
 tail -f apache/logs/error_log &
 
+# Deploy all war files
+WEBAPPDIR=/app/tomcat/webapps
+for WAR in *.war; do
+	echo "Deploying $WAR"
+	cp "$WAR" "$WEBAPPDIR"
+done
+
 while pgrep -f /app/apache/bin/httpd >/dev/null; do
 	echo "Apache running..."
 	sleep 60
