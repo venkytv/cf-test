@@ -1,6 +1,6 @@
 #!/bin/bash
 
-erb httpd.conf.tmpl >./apache/conf/httpd.conf
+erb templates/httpd.conf.tmpl >./apache/conf/httpd.conf
 
 echo "=== APACHE ==="
 /app/apache/bin/httpd -k start
