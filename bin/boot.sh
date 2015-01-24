@@ -13,13 +13,12 @@ cat ./apache/conf/httpd.conf
 
 file ./apache/bin/httpd
 ldd ./apache/bin/httpd
-ls -il ./apache/bin/httpd
 
 uname -a
 
-ls -il /app
-ls -il /app/apache
-ls -il /app/apache/bin/https
+tail -f apache/logs/error.log &
+
+/app/apache/bin/httpd -k
 
 sleep 1
 exit 1
