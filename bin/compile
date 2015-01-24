@@ -3,7 +3,12 @@
 BUILDDIR="$1"
 CACHEDIR="$2"
 
-#cd "$BUILDDIR"
+cd "$BUILDDIR"
+
 #tar xf apache.tar.bz2
 
 export
+
+echo $0
+dirname $0
+ls $( dirname $0 )
