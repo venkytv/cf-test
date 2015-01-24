@@ -26,4 +26,6 @@ ls -l apache/logs
 tail -f apache/logs/error_log &
 ps -ef | grep httpd
 
+sleep 90
+
 exit 1
