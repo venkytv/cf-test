@@ -7,8 +7,4 @@ cd "$BUILDDIR"
 
 #tar xf apache.tar.bz2
 
-export
-
-echo $0
-dirname $0
-ls $( dirname $0 )
+cp "$( dirname $0 )/boot.sh" .
