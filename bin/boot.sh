@@ -5,6 +5,9 @@ export
 
 erb httpd.conf >./apache/conf/httpd.conf
 
+echo "==== JAVA ===="
+type java
+
 /app/apache/bin/httpd -k start
 sleep 5
 
