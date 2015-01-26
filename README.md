@@ -20,3 +20,4 @@ Deploying to Cloud Foundry
     # From the root of the repository
     $ cp <webapp1.war> [<webapp2.war> ...] $PWD
     $ cf push
+    $ cf app sample
