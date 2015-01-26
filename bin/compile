@@ -9,8 +9,8 @@ cd "$BUILDDIR"
 # We would ideally want to download these from a 
 # webserver somewhere.
 #
-tar xf bundles/apache.tar.bz2
-tar xf bundles/jdk.tar.bz2
-tar xf bundles/tomcat.tar.bz2
+tar xf vendor/bundles/apache.tar.bz2
+tar xf vendor/bundles/jre.tar.bz2
+tar xf vendor/bundles/tomcat.tar.bz2
 
 cp "$( dirname $0 )/boot.sh" .

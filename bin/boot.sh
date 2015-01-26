@@ -7,7 +7,7 @@ echo "=== APACHE ==="
 
 echo "=== TOMCAT ==="
 export CATALINA_HOME=/app/tomcat
-export JRE_HOME=/app/jdk/jre
+export JRE_HOME=/app/jre
 ${CATALINA_HOME}/bin/startup.sh &
 
 sleep 2

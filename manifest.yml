@@ -1,0 +1,4 @@
+---
+applications:
+- name: sample
+  buildpack: https://github.com/venkytv/cf-test.git
